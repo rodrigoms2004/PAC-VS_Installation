@@ -1,0 +1,20 @@
+https://sourceforge.net/p/pacmanager/bugs/293/
+
+sudo apt install libglib2.0-dev libpango1.0-dev libvte-dev libvte-2.91-dev dh-make-perl
+
+I was getting these errors:
+MakeMaker FATAL: prerequisites not found.
+ExtUtils::Depends not installed
+ExtUtils::PkgConfig not installed
+
+So I had to do..
+$ sudo perl -MCPAN -e 'shell'
+$ install ExtUtils::Depends
+$ install ExtUtils::PkgConfig
+exit
+
+dh-make-perl --cpan Gnome2::Vte --build
+
+sudo dpkg -i libgnome2-vte*.deb
+
+sudo find /opt/pac/ -name "Vte.so*" -exec rm {} +
