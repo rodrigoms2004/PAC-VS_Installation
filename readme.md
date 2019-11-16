@@ -8,6 +8,9 @@ How to install PAC in UBUNTU 18.04 and its issues
 
 [PAC Download](https://sourceforge.net/projects/pacmanager/)
 
+or
+
+[PAC Download from repo](https://github.com/rodrigoms2004/PAC-VS_Installation/blob/master/pac_download/pac-4.5.5.7-all.deb)
 
 ### Installation 
 
